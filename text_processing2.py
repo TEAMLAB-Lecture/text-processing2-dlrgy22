@@ -101,9 +101,9 @@ def to_camel_case(underscore_str):
             else:
                 if check and len(camelcase_str) != 0:
                     camelcase_str += string_element.upper()
-                    check= False
                 else:
                     camelcase_str += string_element.lower()
+                check= False
 
     else:
         camelcase_str = underscore_str[:]
